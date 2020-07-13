@@ -10,7 +10,7 @@ class Detail extends Component {
         return (
              <ProductConsumer>
                  {hello => {
-                     const {id, title, img, price, company, info, inCart, count, total} = hello.detailproducts;
+                     const {id, title, img, price, company, info, inCart} = hello.detailproducts;
                      console.log(img)
                      return (
                          <div className="container py-5">
@@ -21,7 +21,7 @@ class Detail extends Component {
                              </div>
                              <div className="row">
                                  <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
-                                    <img src={`http://localhost:3000/${img}`} className="img-fluid" />
+                                    <img alt="somy" src={`http://localhost:3000/${img}`} className="img-fluid" />
                                  </div>
                                  <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                                     <h2>model : {title}</h2>

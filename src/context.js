@@ -99,8 +99,9 @@ class ProductProvider extends Component {
         const product = temcart[prodcutindex]
         product.count = product.count - 1;
 
-        {product.count === 0 ? this.handleremoveItem(id) : 
-            
+        if ( product.count === 0 ) {
+            this.handleremoveItem(id)
+        } else {
             product.total = product.price * product.count
 
             this.setState( () => {
@@ -110,8 +111,8 @@ class ProductProvider extends Component {
             },() => {
                 this.handleaddtotal()
             } )
-
         }
+            
         
 
     }

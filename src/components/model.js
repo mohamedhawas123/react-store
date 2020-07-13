@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import styles from 'styled-components'
 import {Link} from 'react-router-dom'
 import {ButtonContainer} from './Button';
 import {ProductConsumer} from '../context';
@@ -14,7 +13,7 @@ class Model extends Component {
            
             { hello => {
                 console.log(hello.modelOpen)
-                const {handleopen, handleclose} = hello;
+                const { handleclose} = hello;
 
                 const {title, price, img} = hello.modelProdcut;
                 if (hello.modelOpen === false) {

@@ -1,6 +1,5 @@
 import React, {Component } from 'react'
 import Title from '../Title'
-import {Table} from 'semantic-ui-react'
 import {ProductConsumer} from '../../context'
 import Emptycart from '../Cart/EmptyCart'
 import Column from './Column'
