@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import PaypalButton from './PaypalButton
 
 
-function CartTotal({value}) {
+function CartTotal({value.history}) {
     const {cartSubTotal, cartTax, cartTotal, clear} = value
     console.log(clear)
     return (
@@ -32,7 +32,7 @@ function CartTotal({value}) {
                         cartSubTotal: 
                         </span> <strong> $ {cartSubTotal}</strong>
                     </h5>
-                    <PaypalButton />
+                    <PaypalButton total ={cartTotal}  clearCart={clear} history={history} />
 
                     
                 </div>
